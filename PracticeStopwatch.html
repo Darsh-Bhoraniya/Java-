@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Practice Html</title>
+</head>
+<body>
+	<input type="button" value="StartCounter" onclick="startbutton()">
+	<input type="button" value="stopCounter" onclick="Stopbutton()">
+	<input type="button" value="reset" onclick="resetTimer()">
+
+	<h1 id="countinerName">counter</h1>
+	<h1 id="counter">count</h1>
+
+	<script type="text/javascript">
+		var a=0,c;
+
+		function startbutton() {
+			c=setInterval(printCounter,10)
+		}
+		function resetTimer() {
+			Stopbutton();
+			a=0;
+			var temp=document.getElementById("counter");
+			temp.innerHTML="0"
+			
+		}
+		function printCounter() {
+			a++;
+			var temp=document.getElementById("counter")
+				temp.innerHTML=a/100
+		}
+		function Stopbutton() {
+			clearInterval(c)
+		}
+	</script>
+</body>
+</html>

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Fibonaci</title>
+</head>
+<body>
+	<script type="text/javascript">
+		n= parseInt(prompt("Eneter Value of n"));
+		var value1=0;
+		var value2=1;
+		var sum;
+		document.write(value1+"&nbsp;")
+			document.write(value2+"&nbsp;")
+		for (i=0;i<=n;i++) {
+			sum = value1+value2;
+			
+			document.write(sum+"&nbsp;")
+			value1=value2;
+			value2=sum
+		}
+	</script>
+
+</body>
+</html>

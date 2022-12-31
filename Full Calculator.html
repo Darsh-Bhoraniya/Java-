@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Demo Calculator</title>
+</head>
+<body>
+	<table>
+		<tr>
+			<td colspan="4"><input type="text" id="txttext"></td>
+		</tr>
+		<tr>
+			<td><input type="button" value="1" onclick="insertdemo(1)"></td>
+			<td><input type="button" value="2" onclick="insertdemo(2)"></td>
+			<td><input type="button" value="3" onclick="insertdemo(3)"></td>
+			<td><input type="button" value="+" onclick="insertdemo('+')"></td>
+		</tr>
+		<tr>
+			<td><input type="button" value="4" onclick="insertdemo(4)"></td>
+			<td><input type="button" value="5" onclick="insertdemo(5)"></td>
+			<td><input type="button" value="6" onclick="insertdemo(6)"></td>
+			<td><input type="button" value="-" onclick="insertdemo('-')"></td>
+		</tr>
+		<tr>
+			<td><input type="button" value="7" onclick="insertdemo(7)"></td>
+			<td><input type="button" value="8" onclick="insertdemo(8)"></td>
+			<td><input type="button" value="9" onclick="insertdemo(9)"></td>
+			<td><input type="button" value="*" onclick="insertdemo('*')"></td>
+		</tr>
+		<tr>
+			<td colspan="2"><input type="button" value="0" onclick="insertdemo(0)"></td>
+			<td><input type="button" value="=" onclick="equal()"></td>
+			<td><input type="button" value="/" onclick="insertdemo('/')"></td>
+		</tr>
+
+	</table>
+	<script type="text/javascript">
+		function insertdemo(n) {
+			document.getElementById('txttext')=document.getElementById('txttext')+n
+		}
+		function equal(){
+			document.getElementById('txttext')=eval((document.getElementById('txttext')+n))
+		}
+	</script>
+
+</body>
+</html>

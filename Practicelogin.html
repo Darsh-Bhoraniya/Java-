@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Practice login</title>
+</head>
+<body>
+	<input type="text" id="text" placeholder="Enter id ">
+		</br>
+	<input type="password" id="password"placeholder="Enter password" >
+	<input type="button" value="shown" onclick="toggalepass()" id="toggalbutton">
+	<br/>
+	<input type="button" value="login" onclick="Onlogging()">
+	<h1 id="ans"></h1>
+
+<script type="text/javascript">
+	function Onlogging(){
+		var un = document.getElementById("text")
+		var p = document.getElementById("password")
+		if (un.value=="Darsh" && p.value=="1230") {
+			document.write("Sucessful")
+		}
+		else{
+			document.write("not match")
+		}
+	}
+	function toggalepass() {
+		var t = document.getElementById("password")
+		var btn=document.getElementById("toggalbutton")
+		if (t.type=="text") {
+			t.type="password"
+			btn.value="show"
+		}
+		else{
+			t.type="text"
+			btn.value="Hide"
+		}
+		
+	}
+</script>
+
+</body>
+</html>
